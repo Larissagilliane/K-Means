@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Análise de agrupamentos: Código-Fonte de kmeans.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Análise de agrupamentos
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.12 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Busca');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b8678fa8510b7ff9a55ffd4d18fd5e47.html">analysis</a></li><li class="navelem"><a class="el" href="dir_3dfe5a1d4f57d0b8a6f6a51836a3fdbf.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">kmeans.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="kmeans_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __KMEANS_H__</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __KMEANS_H__</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_k_means.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_k_means.html">KMeans</a></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> K;                         </div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> total_values;              </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> total_points;              </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::vector&lt;Cluster&gt; clusters; </div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> getIDNearestCenter(<a class="code" href="class_point.html">Point</a> point);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_k_means.html#a51fff55e0aba8cc338f85d670b3d71ff">KMeans</a>(<span class="keywordtype">int</span> K, <span class="keywordtype">int</span> total_points, <span class="keywordtype">int</span> total_values);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_k_means.html#acfec97b0eec57f2ae6b7fd8f123158dc">run</a>(std::vector&lt;Point&gt; &amp; points);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __KMEANS_H__ */</span><span class="preprocessor"></span></div><div class="ttc" id="class_k_means_html_acfec97b0eec57f2ae6b7fd8f123158dc"><div class="ttname"><a href="class_k_means.html#acfec97b0eec57f2ae6b7fd8f123158dc">KMeans::run</a></div><div class="ttdeci">void run(std::vector&lt; Point &gt; &amp;points)</div><div class="ttdef"><b>Definition:</b> <a href="kmeans_8cpp_source.html#l00068">kmeans.cpp:68</a></div></div>
+<div class="ttc" id="class_k_means_html_a51fff55e0aba8cc338f85d670b3d71ff"><div class="ttname"><a href="class_k_means.html#a51fff55e0aba8cc338f85d670b3d71ff">KMeans::KMeans</a></div><div class="ttdeci">KMeans(int K, int total_points, int total_values)</div><div class="ttdef"><b>Definition:</b> <a href="kmeans_8cpp_source.html#l00057">kmeans.cpp:57</a></div></div>
+<div class="ttc" id="class_k_means_html"><div class="ttname"><a href="class_k_means.html">KMeans</a></div><div class="ttdoc">Classe usada para executar o processo de análise de agrupamentos do tipo k-means. ...</div><div class="ttdef"><b>Definition:</b> <a href="kmeans_8h_source.html#l00016">kmeans.h:16</a></div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Classe que representa um ponto. </div><div class="ttdef"><b>Definition:</b> <a href="pointers_8h_source.html#l00016">pointers.h:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

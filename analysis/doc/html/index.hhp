@@ -1,0 +1,82 @@
+[OPTIONS]
+Compiled file=a_agrupamentos
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x416 Portuguese(Brazil)
+Title=Análise de agrupamentos
+
+[WINDOWS]
+main="Análise de agrupamentos","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+cluster_8cpp_source.html
+cluster_8h_source.html
+dataframe_8h_source.html
+hash_8h_source.html
+kmeans_8cpp_source.html
+kmeans_8h_source.html
+labfinal_8cpp_source.html
+pointers_8cpp_source.html
+pointers_8h_source.html
+sets_8h_source.html
+t__analysis_8cpp_source.html
+cluster_8cpp.html
+cluster_8h.html
+dataframe_8h.html
+hash_8h.html
+kmeans_8cpp.html
+kmeans_8h.html
+labfinal_8cpp.html
+pointers_8cpp.html
+pointers_8h.html
+sets_8h.html
+t__analysis_8cpp.html
+class_cluster.html
+class_cluster-members.html
+class_data_frame.html
+class_data_frame-members.html
+class_dataframe.html
+class_k_means.html
+class_k_means-members.html
+class_point.html
+class_point-members.html
+class_set.html
+class_set-members.html
+namespacestd.html
+structstd_1_1hash_3_01_point_01_4.html
+structstd_1_1hash_3_01_point_01_4-members.html
+structstd_1_1hash_3_01std_1_1vector_3_01float_01_4_01_4.html
+structstd_1_1hash_3_01std_1_1vector_3_01float_01_4_01_4-members.html
+dir_b8678fa8510b7ff9a55ffd4d18fd5e47.html
+dir_9f6f38ef79e70e8cec6a5f8910b2c61a.html
+dir_3dfe5a1d4f57d0b8a6f6a51836a3fdbf.html
+dir_bc66cf0f7bc2a011134b03d878d297c1.html
+dir_2f2030f4924f9c3782f105c6a8fcd9fa.html
+index.html
+namespaces.html
+annotated.html
+classes.html
+functions.html
+functions_func.html
+functions_vars.html
+functions_rela.html
+files.html
+globals.html
+globals_func.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png

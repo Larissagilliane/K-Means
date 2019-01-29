@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Análise de agrupamentos: Referência da Classe KMeans</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Análise de agrupamentos
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.12 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Busca');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="class_k_means-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe KMeans</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe usada para executar o processo de análise de agrupamentos do tipo k-means.  
+ <a href="class_k_means.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="kmeans_8h_source.html">kmeans.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:a51fff55e0aba8cc338f85d670b3d71ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_means.html#a51fff55e0aba8cc338f85d670b3d71ff">KMeans</a> (int K, int total_points, int total_values)</td></tr>
+<tr class="separator:a51fff55e0aba8cc338f85d670b3d71ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfec97b0eec57f2ae6b7fd8f123158dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_k_means.html#acfec97b0eec57f2ae6b7fd8f123158dc">run</a> (std::vector&lt; <a class="el" href="class_point.html">Point</a> &gt; &amp;points)</td></tr>
+<tr class="separator:acfec97b0eec57f2ae6b7fd8f123158dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>Classe usada para executar o processo de análise de agrupamentos do tipo k-means. </p>
+<p>Os atributos de um objeto <a class="el" href="class_k_means.html" title="Classe usada para executar o processo de análise de agrupamentos do tipo k-means. ...">KMeans</a> são: K, total_values, total_points, max_iterations, clusters </p>
+
+<p>Definição na linha <a class="el" href="kmeans_8h_source.html#l00016">16</a> do arquivo <a class="el" href="kmeans_8h_source.html">kmeans.h</a>.</p>
+</div><h2 class="groupheader">Construtores &amp; Destrutores</h2>
+<a id="a51fff55e0aba8cc338f85d670b3d71ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51fff55e0aba8cc338f85d670b3d71ff">&sect;&nbsp;</a></span>KMeans()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KMeans::KMeans </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>K</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>total_points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>total_values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construtor parametrizado da classe <a class="el" href="class_k_means.html" title="Classe usada para executar o processo de análise de agrupamentos do tipo k-means. ...">KMeans</a>. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">K</td><td>Número do agrupamento. </td></tr>
+    <tr><td class="paramname">total_points</td><td>Quantidade de pontos pertencentes ao agrupamento. </td></tr>
+    <tr><td class="paramname">total_values</td><td>Quantidade de valores em cade ponto. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definição na linha <a class="el" href="kmeans_8cpp_source.html#l00057">57</a> do arquivo <a class="el" href="kmeans_8cpp_source.html">kmeans.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Métodos</h2>
+<a id="acfec97b0eec57f2ae6b7fd8f123158dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfec97b0eec57f2ae6b7fd8f123158dc">&sect;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KMeans::run </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_point.html">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Execução do algoritmo de agrupamento <a class="el" href="class_k_means.html" title="Classe usada para executar o processo de análise de agrupamentos do tipo k-means. ...">KMeans</a>. </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>Vector com objetos da classe <a class="el" href="class_point.html" title="Classe que representa um ponto. ">Point</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definição na linha <a class="el" href="kmeans_8cpp_source.html#l00068">68</a> do arquivo <a class="el" href="kmeans_8cpp_source.html">kmeans.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes arquivos:<ul>
+<li><a class="el" href="kmeans_8h_source.html">kmeans.h</a></li>
+<li><a class="el" href="kmeans_8cpp_source.html">kmeans.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

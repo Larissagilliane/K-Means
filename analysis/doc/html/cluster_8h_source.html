@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Análise de agrupamentos: Código-Fonte de cluster.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Análise de agrupamentos
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.12 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','Busca');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b8678fa8510b7ff9a55ffd4d18fd5e47.html">analysis</a></li><li class="navelem"><a class="el" href="dir_3dfe5a1d4f57d0b8a6f6a51836a3fdbf.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cluster.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cluster_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __CLUSTER_H__</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __CLUSTER_H__</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_cluster.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cluster.html">Cluster</a></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> id_cluster;                     </div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::vector&lt;float&gt; central_values;  </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::vector&lt;Point&gt; points;          </div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_cluster.html#abdf114bd29fff36c9e22856e9c44853f">Cluster</a>(<span class="keywordtype">int</span> id_cluster, <a class="code" href="class_point.html">Point</a> point);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cluster.html#a6fdc1f74afa097201cacfe0b5348dbc4">addPoint</a>(<a class="code" href="class_point.html">Point</a> point);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_cluster.html#a6ea47e8f26963fbe8a18be99b88c659c">removePoint</a>(<span class="keywordtype">int</span> id_point);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_cluster.html#a75934938d960885f8cc7af624e97ea04">getCentralValue</a>(<span class="keywordtype">int</span> index);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_cluster.html#ae91d077f08abca09fc5f31620bce4ef1">setCentralValue</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">float</span> value);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_point.html">Point</a> <a class="code" href="class_cluster.html#a5ef5ece3f62def890b7a429ca9b4b344">getPoint</a>(<span class="keywordtype">int</span> index);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cluster.html#a774b80a8a29250df5e835c4167f3c914">getTotalPoints</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cluster.html#aeec0e9ff8d23481cbf51a69eb1677ac9">getID</a>();</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_cluster.html#a1d406f235585febbc4cae77022057f1e">   31</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_cluster.html#a1d406f235585febbc4cae77022057f1e">operator==</a>(<span class="keyword">const</span> <a class="code" href="class_cluster.html">Cluster</a> &amp;other) <span class="keyword">const</span> <span class="comment">/* Método necesário para a especialização */</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> (central_values == other.central_values)</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        &amp;&amp; (points == other.points)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        &amp;&amp; (id_cluster == other.id_cluster);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __CLUSTER_H__ */</span><span class="preprocessor"></span></div><div class="ttc" id="class_cluster_html_a6fdc1f74afa097201cacfe0b5348dbc4"><div class="ttname"><a href="class_cluster.html#a6fdc1f74afa097201cacfe0b5348dbc4">Cluster::addPoint</a></div><div class="ttdeci">void addPoint(Point point)</div><div class="ttdoc">Adiciona um ponto ao cluster. </div><div class="ttdef"><b>Definition:</b> <a href="cluster_8cpp_source.html#l00026">cluster.cpp:26</a></div></div>
+<div class="ttc" id="class_cluster_html_ae91d077f08abca09fc5f31620bce4ef1"><div class="ttname"><a href="class_cluster.html#ae91d077f08abca09fc5f31620bce4ef1">Cluster::setCentralValue</a></div><div class="ttdeci">void setCentralValue(int index, float value)</div><div class="ttdoc">Altera o valor do centro do cluster. </div><div class="ttdef"><b>Definition:</b> <a href="cluster_8cpp_source.html#l00063">cluster.cpp:63</a></div></div>
+<div class="ttc" id="class_cluster_html_a75934938d960885f8cc7af624e97ea04"><div class="ttname"><a href="class_cluster.html#a75934938d960885f8cc7af624e97ea04">Cluster::getCentralValue</a></div><div class="ttdeci">float getCentralValue(int index)</div><div class="ttdef"><b>Definition:</b> <a href="cluster_8cpp_source.html#l00053">cluster.cpp:53</a></div></div>
+<div class="ttc" id="class_cluster_html"><div class="ttname"><a href="class_cluster.html">Cluster</a></div><div class="ttdoc">Classe que representa um cluster (agrupamento) </div><div class="ttdef"><b>Definition:</b> <a href="cluster_8h_source.html#l00016">cluster.h:16</a></div></div>
+<div class="ttc" id="class_cluster_html_a6ea47e8f26963fbe8a18be99b88c659c"><div class="ttname"><a href="class_cluster.html#a6ea47e8f26963fbe8a18be99b88c659c">Cluster::removePoint</a></div><div class="ttdeci">bool removePoint(int id_point)</div><div class="ttdoc">Remove um ponto do cluster através do seu identificador, caso seja encontrado. </div><div class="ttdef"><b>Definition:</b> <a href="cluster_8cpp_source.html#l00035">cluster.cpp:35</a></div></div>
+<div class="ttc" id="class_cluster_html_a1d406f235585febbc4cae77022057f1e"><div class="ttname"><a href="class_cluster.html#a1d406f235585febbc4cae77022057f1e">Cluster::operator==</a></div><div class="ttdeci">bool operator==(const Cluster &amp;other) const</div><div class="ttdef"><b>Definition:</b> <a href="cluster_8h_source.html#l00031">cluster.h:31</a></div></div>
+<div class="ttc" id="class_cluster_html_a774b80a8a29250df5e835c4167f3c914"><div class="ttname"><a href="class_cluster.html#a774b80a8a29250df5e835c4167f3c914">Cluster::getTotalPoints</a></div><div class="ttdeci">int getTotalPoints()</div><div class="ttdef"><b>Definition:</b> <a href="cluster_8cpp_source.html#l00077">cluster.cpp:77</a></div></div>
+<div class="ttc" id="class_cluster_html_abdf114bd29fff36c9e22856e9c44853f"><div class="ttname"><a href="class_cluster.html#abdf114bd29fff36c9e22856e9c44853f">Cluster::Cluster</a></div><div class="ttdeci">Cluster(int id_cluster, Point point)</div><div class="ttdef"><b>Definition:</b> <a href="cluster_8cpp_source.html#l00010">cluster.cpp:10</a></div></div>
+<div class="ttc" id="class_cluster_html_aeec0e9ff8d23481cbf51a69eb1677ac9"><div class="ttname"><a href="class_cluster.html#aeec0e9ff8d23481cbf51a69eb1677ac9">Cluster::getID</a></div><div class="ttdeci">int getID()</div><div class="ttdef"><b>Definition:</b> <a href="cluster_8cpp_source.html#l00083">cluster.cpp:83</a></div></div>
+<div class="ttc" id="class_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Classe que representa um ponto. </div><div class="ttdef"><b>Definition:</b> <a href="pointers_8h_source.html#l00016">pointers.h:16</a></div></div>
+<div class="ttc" id="class_cluster_html_a5ef5ece3f62def890b7a429ca9b4b344"><div class="ttname"><a href="class_cluster.html#a5ef5ece3f62def890b7a429ca9b4b344">Cluster::getPoint</a></div><div class="ttdeci">Point getPoint(int index)</div><div class="ttdef"><b>Definition:</b> <a href="cluster_8cpp_source.html#l00071">cluster.cpp:71</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>
